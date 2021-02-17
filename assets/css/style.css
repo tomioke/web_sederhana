@@ -1,0 +1,241 @@
+/* CSS Reset */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Style */
+
+body {
+    /* ukuran standar font 16px dan 28px untuk
+    jarak per baris nya */
+    font: 16px/28px arial, sans-serif;
+    /* Warna background abu-abu */
+    background-color: #eaeaea;
+    /* Membuat warna font tidak terlalu hitam */
+    color: rgb(68, 68, 68);
+    background-image: url(../img/herringbone.png);
+}
+
+.container {
+    /* Lebar container */
+    width: 960px;
+    /* Margin pada container */
+    margin: auto;
+    /* Warna background putih */
+    background-color: white;
+}
+
+.header {
+    /* Biar ga terlalu mepet dengan 
+    container */
+    padding: 20px;
+    /* Supaya banner naik ke atas */
+    padding-bottom: 15px;
+}
+
+.header .judul {
+    /* Mengatur ukuran huruf */
+    font-size: 30px;
+    /* Mengatur ketebalan huruf */
+    font-weight: bold;
+}
+
+.header ul li {
+    /* Agar posisinya horizontal */
+    display: inline-block;
+    /* kasih jarak dengan judul */
+    margin-top: 20px;
+    /* Kasih jarak di sela-sela */
+    margin-right: 7px;
+}
+
+.header a {
+    /* Menghilangkan garis bawah pada text */
+    text-decoration: none;
+    /* ganti warna */
+    color: rgb(219, 134, 7);
+    /* Menambah lebar kotak */
+    padding: 5px;
+}
+
+/* Memberikan efek ketika mouse diarahkan */
+.header a:hover {
+    background-color: lightsalmon;
+    color: white;
+}
+
+.banner {
+    /* Mengatur tinggi */
+    height: 350px;
+    /* Gunakan gambar yang di https://unsplash.com/ */
+    background: url(../img/background.png);
+    /* Supaya gambar muat */
+    background-size: cover;
+    /* Mengatur posisi gambar */
+    background-position: 0 -30px;
+    /* Membuat hiasan di sekitarnya */
+    border-top: 5px solid lightseagreen;
+    border-bottom: 5px solid lightsteelblue;
+
+}
+
+.main {
+    /* Menentukan lebar */
+    width: 600px;
+    /* Mengatur jarak dari container */
+    padding: 20px;
+    /* Mengatur jarak dengan gambar banner */
+    margin-top: 30px;
+    /* Agar posisinya tetap */
+    box-sizing: border-box;
+    /* Agar posisi di kiri pakai float */
+    float: left;
+}
+
+.main h2 {
+    /* Memberi ukuran dan jarak pada teks */
+    padding-bottom: 10px;
+    /* Ukuran huruf */
+    font-size: 25px;
+    /* huruf jadi tebal */
+    font-weight: bold;
+}
+
+.main .penulis {
+    /* Mengecilkan ukuran huruf */
+    font-size: 12px;
+}
+
+/* Membuat garis bawah di teks hilang */
+.main .penulis a {
+    text-decoration: none;
+    /* Rubah warna */
+    color: rgb(219, 134, 7);
+}
+
+.main p {
+    /* Memberikan jarak spasi */
+    margin-bottom: 10px;
+    font-size: 15px;
+}
+
+.footer {
+    background-color: #333;
+    /* Memberi warna pada huruf */
+    color: #eaeaea;
+    /* Membuat bagian footer jadi lebar */
+    padding: 20px;
+    /* Posisi teks ada di tengah */
+    text-align: center;
+}
+
+/* Mengatur bagian paragraf/kalimatnya */
+.footer p {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.sidebar {
+    /* Lebar sidebar */
+    width: 300px;
+    /* Supaya ada disebelah kanan */
+    float: right;
+    /* Kasih jarak biar ga terlalu mepet */
+    padding: 20px;
+    /* Supaya teks pindah ke bawah */
+    margin-top: 30px;
+}
+
+.sidebar h3 {
+    /* Buat huruf jadi tebal */
+    font-weight: bold;
+    /* Warna abu-abu */
+    color: #666;
+    /* Posisi teks di tengah */
+    text-align: center;
+}
+
+/* Posisi Gambar ditengah */
+.sidebar img {
+    /* Supaya bisa menyesuaikan dengan pengaturan yang diterapkan */
+    position: relative;
+    /* Pengaturan ukuran */
+    width: 100px;
+    height: 100px;
+    /* Posisi bergeser dari kiri */
+    left: 50%;
+    /* Supaya posisinya tepat ditengah */
+    transform: translateX(-50%);
+    /* Supaya bentuk lingkaran */
+    border-radius: 50%;
+    /* Gambar geser ke bawah */
+    margin-top: 15px;
+}
+
+.sidebar p {
+    font: 14px/18px arial;
+    margin-top: 10px;
+}
+
+
+
+/* Clearfix untuk memperbaiki tampilan akibat float */
+/* http://nicolasgallagher.com/micro-clearfix-hack/ */
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+.cf {
+    *zoom: 1;
+}
